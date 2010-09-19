@@ -1,0 +1,16 @@
+{
+  "name": "gameknot4chrome",
+  "version": "1.0",
+  "description": "The first extension for Gameknot.com by Cagnulein (http://cagnulein.no-ip.info/wordpress/)",
+  "icons": {"16": "icon.png","48": "logo.jpg","128": "logo.jpg"},
+  "update_url": "http://cagnulein.no-ip.info/gameknot4chrome/updates.xml",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "popup": "popup.html"
+  },
+  "background_page": "background.html",
+  "permissions": [
+    "http://gameknot.com/",
+    "tabs"
+  ]
+}

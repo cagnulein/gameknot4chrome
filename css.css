@@ -1,0 +1,1217 @@
+HTML
+{
+    overflow-y: scroll;
+}
+
+BODY
+{
+    margin: 0px;
+    padding: 0px;
+    background: #333344 url(/img/main-bg2.jpg) 0 top repeat;
+}
+
+BODY, TD, .nrml
+{ 
+    font-size: 13px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #FFFFDD;
+}
+
+BODY.gk_pop
+{
+    margin: 2px 6px;
+    background: #333344;
+}
+
+BODY.gk_redir
+{
+    margin: 10px;
+    background: #333344;
+}
+
+FORM
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+A, A:link, A:visited 
+{ 
+    color: #FF9933;
+    text-decoration: none; 
+}
+
+A:hover 
+{
+    color: #FF6600;
+    text-decoration: underline; 
+}
+
+INPUT, TEXTAREA, SELECT
+{ 
+    font-size: 13px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #000000; 
+    font-weight: normal; 
+}
+
+TABLE
+{
+    border: 0px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    margin: 0px auto;
+}
+
+TD
+{
+    padding: 0px;
+}
+
+EM
+{
+    font-weight: bold;
+    font-style: normal;
+}
+
+EM, B
+{
+    text-decoration: inherit;
+}
+
+LI
+{
+    margin-bottom: 4px;
+}
+
+.sml, .sml TD
+{ 
+    font-size: 11px; 
+}
+
+.med, .med TD
+{ 
+    font-size: 12px; 
+}
+
+.big, .big TD
+{ 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.huge, .huge TD
+{ 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.rounded-corner
+{
+    display: block;
+    height: 1px;
+    overflow: hidden;
+    line-height: 1px;
+    font-size: 1px;
+    border: 1px solid #333344;
+}
+
+.pp
+{
+    padding: 4px 2px;
+}
+
+.printable *
+{
+    color: #000000 !important;
+    background: #ffffff !important;
+}
+
+.fnote
+{ 
+    font-size: 10px; 
+    color: #9999AA;
+}
+
+.footnote
+{
+    vertical-align: top;
+    font-size: 11px; 
+    color: #6666dd;
+}
+
+.just_half
+{
+    width: 45%;
+}
+
+.just_most
+{
+    width: 90%;
+    margin: 0px auto;
+}
+
+.clearfix:after
+{
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix
+{
+    display: block;
+}
+
+.clearfix
+{
+    .display: inline-block;
+}
+
+* html .clearfix
+{
+    height: 1%;
+}
+
+.norm TD, .row .norm TD
+{
+    padding: 2px;
+    vertical-align: top;
+}
+
+.row TD, .dialog .row TD, .list .row TD
+{
+    padding: 0px;
+    border: 0px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.row INPUT, .row SELECT
+{
+    vertical-align: middle;
+}
+
+table.rndfrm
+{
+    padding: 0px;
+    margin: 5px auto;
+}
+
+td.rndfrm
+{
+    border: 0px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.rndfrm1, .rndfrm2, .rndfrm3
+{
+    background: #444455;
+    height: 1px;
+    font-size: 1px;
+    line-height: 1px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+tr.rndfrm0
+{
+    background: #444455;
+}
+
+.rndfrm1
+{
+    margin: 0px 1px;
+    height: 2px;
+}
+
+.rndfrm2
+{
+    margin: 0px 2px;
+}
+
+.rndfrm3
+{
+    margin: 0px 4px;
+}
+
+#gk_header
+{
+    padding: 0px;
+    background: #666699;
+}
+
+#gk_header_in
+{
+    width: 990px;
+    margin: 0px auto;
+}
+
+.gk_header_el
+{
+    float: left;
+    bottom: 0px;
+}
+
+#gk_outside
+{
+    width: 100%;
+    background: url('/img/main-backdrop2.png') repeat-y center;
+    float: left;
+}
+
+#gk_wrap
+{
+    width: 960px;
+    padding: 5px 14px;
+    margin: 0px auto;
+    background: #333344;
+    min-height: 700px;
+    padding-bottom: 150px;
+}
+
+#gk_main_toolbar
+{
+    height: 26px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: right;
+    font-weight: bold;
+}
+
+#gk_header A
+{
+    color: #FFAA44;
+}
+
+#gk_main_nav
+{
+    margin: 0px 0px 0px 5px;
+    padding: 0px;
+}
+
+div[id="gk_main_nav"]
+{
+    background: #666699 url(/img/navgrad.png) 0 top repeat-x;
+}
+
+#gk_main_nav UL
+{
+    list-style: none outside;
+    margin: 0px;
+    padding: 0px;
+}
+
+#gk_main_nav UL LI
+{
+    border-left: 1px solid #444477;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+#gk_main_nav UL LI A
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFAA44;
+    padding: 0px 8px;
+    margin: 0px;
+    line-height: 30px;
+    display: block;
+    text-shadow: #111111 1px 1px 1px;
+    filter: Shadow(Color=#111111,Direction=135,Strength=1);
+}
+
+#gk_main_nav UL LI A:hover
+{
+    color: #eeeeee;
+    background: #444477;
+    text-shadow: none;
+}
+
+TABLE.dtable 
+{ 
+    border-collapse: collapse; 
+    border: 1px solid #555566;
+    white-space: nowrap;
+}
+
+TABLE.dtable TH 
+{ 
+    border-top: 1px dotted #555566;
+    font-size: 11px; 
+    padding: 4px;
+}
+
+TABLE.dtable TD 
+{ 
+    border-top: 1px dotted #555566;
+    font-size: 11px;
+    padding: 4px;
+    text-align: center;
+}
+
+TABLE.dtable A, TABLE.dtable A:link, TABLE.dtable A:visited, TABLE.dtable B
+{ 
+    font-size: 11px;
+}
+
+.myuid
+{
+    font-weight: bold;
+}
+
+TABLE#chessvs
+{
+    margin: 4px;
+    border-top: 1px dotted #555566; 
+    border-bottom: 1px dotted #555566;
+}
+
+TABLE#chessvs td
+{
+    padding: 3px 12px;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.avatar
+{
+    float: left;
+    border: 1px solid #555588;
+    background: #444455;
+    padding: 0px;
+    margin: 0px 5px 0px 0px;
+}
+
+.avatar img
+{
+    border: 1px solid #222233;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+
+.picture
+{
+    float: left;
+    border: 1px solid #555588;
+    background: #444455;
+    padding: 0px;
+    margin: 4px;
+}
+
+.picture img
+{
+    border: 1px solid #222233;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+/* important text */
+.imp
+{
+    font-weight: bold;
+    color: #9999FF;
+}
+
+/* warning text */
+.wrn
+{
+    font-weight: bold;
+    color: #ffff00;
+}
+
+/* error text */
+.err
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+/* dim/subtle text */
+.dim
+{
+    color: #999999;
+    font-weight: normal;
+}
+
+/* nearly invisible text */
+.off
+{
+    color: #222222;
+}
+
+/* table/column/page header */
+.hdr
+{
+    font-weight: bold;
+    background: #6a6b94;
+    color: #FFFFDD;
+}
+
+.popmenu
+{
+    position: absolute;
+    display: block;
+    cursor: default;
+    text-decoration: none;
+    white-space: nowrap;
+    border: 2px solid #4D4D73;
+    background: #444455;
+    font-size: 13px; 
+}
+
+.popmenu .hdr
+{
+    font-weight: bold;
+    color: #EEEEFF;
+    background: #4D4D73 url(/img/grad2-24.gif) repeat-x top left;
+    line-height: 26px;
+    padding: 0 6px;
+    margin: -2px -2px 0 -2px;
+}       
+
+.price
+{
+    font: bold 16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #ffcc00;
+}
+
+#page_footer
+{
+    clear: both;
+    color: #777788;
+    font-size: 11px;
+    text-align: center;
+    white-space: nowrap;
+    line-height: 20px;
+    background: transparent;
+    border-top: 1px solid #555577;
+    width: 988px;
+    margin: 0px auto;
+}
+
+#page_footer a
+{
+    color: #BB7733;
+    font-size: 11px;
+}
+
+#filnk
+{
+    color: #777788 !important;
+}
+
+#bookmark_menu
+{
+    position: absolute; 
+    clear: both;
+    float: right;
+    z-index: 100;
+    display: none;
+    visibility: hidden;
+    border: 2px solid #666699;
+    background: #545465;
+    opacity: 0.95;
+    filter: alpha(opacity=95);
+}
+
+#bookmark_menu div
+{
+    padding: 5px;
+}
+
+.star_cell
+{
+    position: absolute;
+    overflow: hidden;
+}
+
+.star_cell IMG
+{
+    position: absolute;
+}
+
+.star_box
+{
+    position: relative;
+    padding: 0px;
+}    
+
+#star_img
+{
+    position: absolute;
+    top: -500px;
+}
+
+#stats_tabs_header
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+#stats_tabs_header td
+{
+    padding: 5px 20px;
+}
+
+#stats_tabs_body
+{
+    width: 100%;
+    background: #444455;
+}
+
+#stats_tabs_body td
+{
+    line-height: 1.4em;
+    padding: 0px 10px;
+}
+
+TABLE TD.stats_tab_selected
+{
+    background: #444455;
+    font-weight: bold;
+    border-bottom: 2px solid #444455;
+}
+
+TABLE TD.stats_tab_unselected
+{
+    background: #3d3d4d;
+    border: 4px solid #333344;
+    border-bottom: 2px solid #333344;
+}
+
+.img_frame
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.img_frame IMG
+{
+    position: absolute;
+}
+
+.pvtmsg
+{
+    padding: 3px 3px 3px 10px;
+    border-top: 1px solid #666688;
+    font-size: 12px;
+}
+
+.csmsg
+{
+    padding: 3px 3px 3px 10px;
+    border-top: 1px solid #996633;
+    font-size: 12px;
+}
+
+#temp_popup_bubble
+{
+    position: absolute;
+    z-index: 100;
+    display: block;
+    cursor: default;
+    text-decoration: none;
+    padding: 5px; 
+    font-size: 11px; 
+    color: #FFFFFF; 
+    border: 1px solid #666699;
+    background: #333355;
+}
+
+.popup_bubble_shadow
+{
+    background: #222222;
+    opacity: 0.50;
+    filter: alpha(opacity=50);
+}
+
+#gk_popboard_info
+{
+    text-align: center;
+    font-size: 12px;
+    padding: 0px;
+    width: 200px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.chess-diag-vl td 
+{ 
+    height: 25px; 
+    color: #888899; 
+    font-size: 10px; 
+    text-align: center; 
+    padding: 0px 2px 0px 1px; 
+}
+
+.chess-diag-hl td 
+{ 
+    width: 25px;  
+    color: #888899; 
+    font-size: 10px; 
+    text-align: center; 
+    padding: 1px 0px 1px 0px; 
+}
+
+.boardlabel td
+{ 
+    color: #888899; 
+    font-size: 10px !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+.boarddiagram td
+{
+    padding: 0px !important;
+    margin: 0px !important;
+    border: 0px !important;
+}
+
+.img-blank
+{
+    width: 1px;
+    height: 1px;
+    vertical-align: middle;
+    padding: 0px;
+    border: 0px;
+}
+
+.span-q
+{
+    cursor: pointer;
+    padding-right: 18px;
+    background: transparent url(/img/q.png) center right no-repeat;
+}
+
+.span-wait
+{
+    padding-left: 20px;
+    background: transparent url(/img/wait.gif) center left no-repeat;
+    line-height: 16px;
+}
+
+.imgs
+{
+    border: 0px;
+    padding: 0px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.img-q, .img-act, .img-ps, .img-onl, .img-cmnt, .img-exl, .img-nw, .img-wait, .img-doc, .img-clc
+{
+    border: 0px;
+    padding: 0px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px 4px 0px 0px;
+    margin-top: -2px;
+}
+
+.img-q
+{
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    padding: 0px 4px;
+}
+
+.img-nw
+{
+    width: 18px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.img-exl
+{
+    width: 12px;
+    height: 12px;
+}
+
+.img-cmnt
+{
+    width: 17px;
+    height: 15px;
+}
+
+.img-onl
+{
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+}
+
+.img-ps
+{
+    width: 13px;
+    height: 15px;
+    padding: 0px 0px 0px 4px;
+}
+
+.img-act
+{
+    width: 8px;
+    height: 8px;
+}
+
+.img-clc
+{
+    width: 11px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.img-wait
+{
+    width: 16px;
+    height: 16px;
+}
+
+.img-doc
+{
+    width: 13px;
+    height: 15px;
+}
+
+#allmovesgraph TD
+{
+    padding: 2px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+TABLE.paginator
+{
+    margin: 1px;
+    padding: 0px;
+    white-space: nowrap;
+}
+
+TABLE.paginator TD, .row TABLE.paginator TD
+{ 
+    padding: 1px 3px;
+    border: 0px;
+    border-right: 1px dotted #555566;
+    text-align: center;
+    margin: 0px;
+}
+
+.list
+{
+    clear: both;
+}
+
+.list TH
+{
+    background: #4D4D73 url(/img/grad2-24.gif) repeat-x top left;
+    border: 1px solid #333344;
+    font-weight: bold; 
+    font-size: 11px;
+    padding: 0 5px;
+    text-align: left;
+    white-space: nowrap;
+    color: #FFFFDD;
+    vertical-align: top;
+    line-height: 24px;
+}
+
+.list TH A
+{
+    color: #FFFFDD;
+}
+
+.list TD
+{
+    padding: 5px;
+    border: 1px solid #333344;
+    text-align: center;
+}
+
+.odd_list
+{
+    background: #444455;
+}
+
+.evn_list
+{
+    background: #505060;
+}
+
+.odd_list_dim
+{
+    background: #383848;
+}
+
+.evn_list_dim
+{
+    background: #404050;
+}
+
+.hlt_list
+{
+    background: #444477;
+    font-weight: bold;
+}
+
+.wdgprv,
+.wdgprv TD
+{ 
+    color: #000000;
+    background: #ffffff;
+}
+
+.wdgprv A,
+.wdgprv A:visited 
+{
+    color: #0000ff;
+}
+
+.wdgprv-sml,
+.wdgprv-sml TD
+{ 
+    font-size: 11px;
+}
+
+.wdgprv-nrm,
+.wdgprv-nrm TD
+{ 
+    font-size: 13px;
+}
+
+TD.tab_body
+{
+    background: #444455;
+    border: 0px;
+}
+
+TD.tab_active, TD.tab_inactive
+{
+    padding: 2px 10px; 
+    white-space: nowrap; 
+    width: 10%;
+    font-size: 11px;
+}
+
+TD.tab_active
+{
+    font-weight: bold;
+    background: #444455;
+    border-bottom: 2px solid #444455;
+}
+
+TD.tab_inactive
+{
+    font-weight: normal;
+    background: #3d3d4d;
+    border: 2px solid #333344;
+}
+
+TD.tab_empty
+{
+    font-size: 11px;
+    width: auto;
+    border-bottom: 2px solid #333344;
+}
+
+.divider, .divider_txt
+{
+    height: 1px; 
+    line-height: 1px; 
+    font-size: 1px;
+    padding: 0px;
+    border: 0px;
+}
+
+.divider
+{
+    background: #666699;
+    margin: 2px 0px;
+}
+
+.divider_txt
+{
+    background: #777788;
+    margin: 4px 0px;
+}
+
+div.hdr_section
+{
+    font-family: Verdana, Arial, sans-serif;
+    white-space: nowrap;
+    padding-left: 24px;
+    background: #4D4D73 url(/img/grad2-24.gif) repeat-x top left;
+    font-size: 11px;
+    font-weight: bold;
+    clear: both;
+    height: 24px;
+    line-height: 24px;
+    margin: 4px 0 2px 0;
+    color: #FFFFDD;
+}
+
+div.hdr_section div
+{
+    position: relative;
+    color: #222222;
+    background: transparent;
+}
+
+div.hdr_section div div
+{
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    text-decoration: none; 
+    background: transparent;    
+    color: #FFFFDD;
+}
+
+A.fbtn
+{
+    background: transparent url(/img/fancy-button.png) no-repeat right -41px;
+    padding: 0 19px 0 0;
+    display: inline-block;
+    color: #ffffdd;
+}
+
+A.fbtn span
+{
+    background: transparent url(/img/fancy-button.png) no-repeat left top;
+    height: 38px;
+    line-height: 36px;
+    padding: 0 0 0 18px;
+    white-space: nowrap;
+    display: inline-block;
+    cursor: pointer;
+}
+
+A.fbtn:hover
+{
+    background-position: right -123px; 
+    text-decoration: none;
+    color: #ffffff;
+}
+
+A.fbtn:hover span
+{
+    background-position: 0 -82px; 
+}
+
+A.fbtn-sml
+{
+    background: transparent url(/img/fancy-button-sml.png) no-repeat right -32px;
+    padding: 0 13px 0 0;
+    display: inline-block;
+    color: #ffffdd;
+}
+
+A.fbtn-sml span
+{
+    background: transparent url(/img/fancy-button-sml.png) no-repeat left top;
+    height: 32px;
+    line-height: 30px;
+    padding: 0 0 0 15px;
+    white-space: nowrap;
+    display: inline-block;
+    cursor: pointer;
+}
+
+A.fbtn-sml:hover
+{
+    background-position: right -96px; 
+    text-decoration: none;
+    color: #ffffff; 
+}
+
+A.fbtn-sml:hover span
+{
+    background-position: 0 -64px; 
+}
+
+A.ext
+{
+    padding-left: 12px;
+    background: url(/img/ext-link.png) no-repeat left center;
+}
+
+#google-ad-left
+{
+    margin-left: 15px;
+    background: #333344;
+}
+
+.dialog TD
+{
+    padding: 3px 5px 4px 5px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.dialog TD.lbl
+{
+    text-align: right;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.dialog INPUT, .dialog SELECT
+{
+    vertical-align: middle;
+}
+
+.player_white
+{
+    color: #777777;
+    background: #ffffff;
+}
+
+.player_black
+{
+    color: #999999; 
+    background: #000000;
+}
+
+DIV.player_white, DIV.player_black
+{
+    width: 14px; 
+    margin: auto; 
+    text-align: center;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.value_up
+{
+    color: #66dd66;
+}
+
+.value_down
+{
+    color: #dd6666;
+}
+
+.graph_up
+{
+    background: #66dd66;
+}
+
+.graph_down
+{
+    background: #dd6666;
+}
+
+.fig-q
+{
+    padding-left: 16px;
+    background: transparent url(/img/fig/wq.png) center left no-repeat;
+}
+
+.fig-r
+{
+    padding-left: 14px;
+    background: transparent url(/img/fig/wr.png) center left no-repeat;
+}
+
+.fig-k
+{
+    padding-left: 15px;
+    background: transparent url(/img/fig/wk.png) center left no-repeat;
+}
+
+.fig-n
+{
+    padding-left: 14px;
+    background: transparent url(/img/fig/wn.png) center left no-repeat;
+}
+
+.fig-b
+{
+    padding-left: 16px;
+    background: transparent url(/img/fig/wb.png) center left no-repeat;
+}
+
+.fig-p
+{
+    padding-left: 11px;
+    background: transparent url(/img/fig/wp.png) center left no-repeat;
+}
+
+.fullpage-form
+{
+    background: #333344;
+    position: absolute;
+    display: block;
+    z-index: 50;
+    opacity: 0.95;
+    filter: alpha(opacity=95);
+}
+
+.anno-mv-w-note
+{
+    background: #444455;
+    font-style: italic;
+}
+
+TABLE.anno-info-header
+{
+    width: 100%;
+    padding-bottom: 4px;
+}
+
+TABLE.anno-info-header TD
+{
+    vertical-align: top; 
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+TABLE.anno-info-header INPUT, TABLE.anno-info-header SELECT
+{
+    font-size: 12px;
+    line-height: 13px;
+}
+
+.hlt_text
+{
+    background: #555588;
+}
+
+.hlt_text_mo
+{
+    background: #444477;
+}
+
+#menu_after_move
+{
+    font-size: 11px;
+    margin: 2px;
+    border: 1px solid #555566;
+    padding: 2px;
+}
+
+#chess-info-header
+{
+    width: 90%;
+}
+
+#queen-pic
+{
+    background: url(/img/queen-big-b.jpg) no-repeat left top;
+    min-height: 185px;
+}
+

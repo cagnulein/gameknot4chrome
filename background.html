@@ -1,0 +1,61 @@
+<!--
+     This program is free software; you can redistribute it and/or modify
+     it under the terms of the GNU General Public License as published by
+     the Free Software Foundation; version 2 of the License.
+   
+     This program is distributed in the hope that it will be useful,
+     but WITHOUT ANY WARRANTY; without even the implied warranty of
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+     GNU General Public License for more details.
+-->
+
+<html>
+<head></head>
+<body>
+<script src="analytics.js"></script>
+<script>
+
+refresh();
+
+function refresh () {
+	var req = new XMLHttpRequest();
+	req.open(
+	    "GET",
+	    "http://gameknot.com/play-chess.pl",
+	    true);
+	req.onload = countGames;
+	req.send(null);
+	setTimeout("refresh();", 60000);
+}
+
+function countGames() {
+  var fullhtml = this.responseText;
+
+  //get only the main table
+  var tablestart = fullhtml.indexOf('<TR><TH style="width: 180px;" ><a href="/play-chess.pl?s=1" onMouseOver="pb_show(event,\'Click to sort by this column\')">Game title</A></TH>');
+  var tableend = fullhtml.indexOf('<tr><td colspan=7><table class=row style="float: right;">');
+  var table = fullhtml.substring(tablestart,tableend);
+  table = "<head><link rel='stylesheet' type='text/css' href='css.css'></HEAD><div id='gk_outside'><div id='gk_wrap' class='clearfix'><TABLE class=list>" + table + "</TABLE></div></div>";
+
+  // count games
+  var count=0;
+  while(table.indexOf('my move')!=-1)
+  {
+  	table = table.replace("my move","25fdjkkjlafjkl25alksdfjaafdjk25sl");
+	count++;
+  }
+  if(count>0)
+  {
+        chrome.browserAction.setBadgeBackgroundColor({color: [255, 0, 0, 0]});
+        chrome.browserAction.setBadgeText({text: '' + count});
+  }
+  else
+  {
+        chrome.browserAction.setBadgeBackgroundColor({color: [255, 0, 0, 0]});
+        chrome.browserAction.setBadgeText({text: ''});
+  }  
+}
+
+</script>
+</body>
+</html>

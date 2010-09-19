@@ -1,0 +1,64 @@
+<!--
+     This program is free software; you can redistribute it and/or modify
+     it under the terms of the GNU General Public License as published by
+     the Free Software Foundation; version 2 of the License.
+   
+     This program is distributed in the hope that it will be useful,
+     but WITHOUT ANY WARRANTY; without even the implied warranty of
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+     GNU General Public License for more details.
+-->
+<script src="analytics.js"></script>
+<script>
+var req = new XMLHttpRequest();
+req.open(
+    "GET",
+    "http://gameknot.com/play-chess.pl",
+    true);
+req.onload = showGames;
+req.send(null);
+
+function openTab(tabUrl) {
+  if(tabUrl.match(/^www/i)) {
+    tabUrl = "http://" + tabUrl;
+  }
+  window.open(tabUrl);
+}
+
+function showGames() {
+  var fullhtml = this.responseText;
+
+  //get only the main table
+  var tablestart = fullhtml.indexOf('<TR><TH style="width: 180px;" ><a href="/play-chess.pl?s=1" onMouseOver="pb_show(event,\'Click to sort by this column\')">Game title</A></TH>');
+  if(tablestart==-1)
+  {
+      document.write("<a href='javascript:' onclick='javascript:openTab(\"http://gameknot.com/login.pl\")'>You need to login first</a>");
+      return;
+  }
+  var tableend = fullhtml.indexOf('<tr><td colspan=7><table class=row style="float: right;">');
+  var table = fullhtml.substring(tablestart,tableend);
+  table = "<head><link rel='stylesheet' type='text/css' href='css.css'></HEAD><div id='gk_outside'><div id='gk_wrap' class='clearfix'><TABLE class=list>" + table + "</TABLE></div></div>";
+
+  // replace href
+  while(table.indexOf('href="/chess.pl?')!=-1)
+  {
+	var linkstart = table.indexOf('href="/chess.pl?');
+	var linkend = table.indexOf('"',linkstart+8);
+        var url = table.substring(linkstart+6,linkend);
+        var newurl = 'javascript:" onclick="javascript:openTab(\'http://gameknot.com/' + url +"')";
+  	table = table.replace('href="' + url,'href="' + newurl);
+  }
+  while(table.indexOf('href="/stats.pl?')!=-1)
+  {
+	var linkstart = table.indexOf('href="/stats.pl?');
+	var linkend = table.indexOf('"',linkstart+8);
+        var url = table.substring(linkstart+6,linkend);
+        var newurl = 'javascript:" onclick="javascript:openTab(\'http://gameknot.com/' + url +"')";
+  	table = table.replace('href="' + url,'href="' + newurl);
+  }
+
+  document.write(table);
+}
+
+/*<a href="javascript:" onclick="javascript:openTab('http://yfrog.com/jl8hzej')" onmouseover="Renderer.expandLink(this, 'http://yfrog.com/jl8hzej')">http://yfrog.com/jl8hzej</a>*/
+</script>
